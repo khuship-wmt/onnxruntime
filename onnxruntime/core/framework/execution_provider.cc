@@ -18,6 +18,8 @@ inline int MakeKey(int id, OrtMemType mem_type) {
 }
 }  // namespace
 
+IExecutionProvider::~IExecutionProvider() = default;
+
 AllocatorPtr IExecutionProvider::GetAllocator(int id, OrtMemType mem_type) const {
   auto iter = allocators_.find(MakeKey(id, mem_type));
   if (iter != allocators_.end()) {
