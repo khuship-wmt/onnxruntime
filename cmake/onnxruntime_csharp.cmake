@@ -47,6 +47,7 @@ if (onnxruntime_USE_TENSORRT)
 endif()
 
 include(CSharpUtilities)
+include(CSharpUtilities)
 
 # generate Directory.Build.props
 set(DIRECTORY_BUILD_PROPS_COMMENT "WARNING: This is a generated file, please do not check it in!")
